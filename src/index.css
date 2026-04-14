@@ -168,7 +168,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
   z-index: 1;
   text-align: center;
 }
-/* Hide pink orb on mobile */
+/* Hide orange orb on mobile */
 .hero::before { display: none; }
 
 .live-tag {
@@ -330,7 +330,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
   cursor: default;
 }
 
-/* Pink highlight bar that sweeps up from bottom on hover */
+/* Orange highlight bar that sweeps up from bottom on hover */
 .feat-card::before {
   content: '';
   position: absolute;
@@ -344,7 +344,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
 }
 .feat-card:hover::before { transform: scaleX(1); }
 
-/* Pink glow fill rising from bottom */
+/* Orange glow fill rising from bottom */
 .feat-card::after {
   content: '';
   position: absolute;
@@ -538,7 +538,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
   padding:5rem 1.5rem;text-align:center;
   position:relative;z-index:1;
 }
-/* pulsing pink orb */
+/* pulsing orange orb */
 .cta-orb {
   position:absolute;
   width:300px;height:300px;border-radius:50%;

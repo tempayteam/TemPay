@@ -17,7 +17,7 @@ const Hero = () => {
     const LERP = 0.14;
 
     const ORANGE = "#f46900";
-    const ORANGE_MID = "#ff4d94";
+    const ORANGE_MID = "#ff8c3b";
     const GREY = "rgba(150,150,175,0.28)";
 
     let dots = [];
