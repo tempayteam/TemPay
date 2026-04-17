@@ -143,6 +143,52 @@
 }
 @keyframes wl-blink { 0%,100%{opacity:1}50%{opacity:0.3} }
 
+/* ── STEP CONTENT TRANSITIONS ── */
+.wl-step-content {
+  animation: wl-fadeIn 0.4s ease-out both;
+}
+@keyframes wl-fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wl-step-hint {
+  font-size: .8rem; color: var(--ink-3);
+  text-align: center; margin-top: 1rem;
+  font-weight: 500;
+}
+
+.wl-input-error {
+  font-size: .75rem; color: #e53e3e;
+  font-weight: 600; margin-top: -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.wl-success-subtext {
+  font-size: .88rem; color: var(--ink-2);
+  line-height: 1.6; text-align: center;
+  margin-top: 0.75rem;
+}
+
+.wl-btn-social-x {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  background: #000; color: white; border: none;
+  border-radius: 12px; padding: 0.9rem 1.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .95rem; font-weight: 700; cursor: pointer;
+  width: 100%; transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.wl-btn-social-x:hover {
+  background: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.wl-divider {
+  display: none; /* Removed as per new flow */
+}
+
 .wl-divider {
   display: flex; align-items: center; gap: .75rem;
   margin-bottom: 1rem;
@@ -152,24 +198,7 @@
 }
 .wl-divider span { font-size: .72rem; color: var(--ink-3); font-weight: 500; }
 
-.wl-socials { display: flex; gap: .6rem; flex-direction: column; }
-.wl-social-btn {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  background: #1a1a1a; border: none;
-  border-radius: 100px; padding: .75rem 1.5rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: .78rem; font-weight: 800;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  color: white; text-decoration: none;
-  transition: all 0.2s;
-}
-.wl-social-btn:hover {
-  background: #2d2d2d;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
-}
-.wl-social-btn svg { width: 16px; height: 16px; flex-shrink: 0; display: block; }
-.wl-social-btn .ic { width: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.wl-socials { display: none; }
 
 /* ── FOOTER (MOBILE BASE) ── */
 .wl-page-footer {

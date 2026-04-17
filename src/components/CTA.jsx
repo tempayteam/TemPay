@@ -10,9 +10,13 @@ const CTA = () => {
         <p className="cta-label">Ready to begin?</p>
         <h2>Start secure crypto payments using Tempay</h2>
         <p>No middlemen. No risk. Just programmable trust with Tempay.</p>
-        <a href="#" className="btn-cta docs-link" style={{ display: 'inline-block', textDecoration: 'none' }} onClick={(e) => e.preventDefault()}>Get Started →
-          <span className="docs-tooltip">Coming Soon</span>
-        </a>
+        <Link
+          to="/whitelist"
+          className="btn-cta"
+          style={{ display: "inline-block", textDecoration: "none" }}
+        >
+          Get Started →
+        </Link>
       </div>
     </div>
   );

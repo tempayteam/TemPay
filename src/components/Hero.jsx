@@ -119,13 +119,9 @@ const Hero = () => {
             on-chain dispute resolution.
           </p>
           <div className="hero-ctas">
-            <a
-              href="#"
-              className="btn btn-fill btn-lg docs-link"
-              onClick={(e) => e.preventDefault()}
-            >
-              Launch App →<span className="docs-tooltip">Coming Soon</span>
-            </a>
+            <Link to="/whitelist" className="btn btn-fill btn-lg">
+              Launch App →
+            </Link>
             <a href="#hiw" className="how-link">
               How it works ↓
             </a>

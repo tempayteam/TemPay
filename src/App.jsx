@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-// import Waitlist from "./pages/Waitlist";
+import Waitlist from "./pages/Whitelist";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/waitlist" element={<Waitlist />} /> */}
+        <Route path="/whitelist" element={<Waitlist />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

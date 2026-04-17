@@ -81,9 +81,9 @@ const Footer = () => {
           <a href="#hiw" className="foot-link">
             How it works
           </a>
-          <span className="foot-link foot-soon-link">
-            Join Whitelist <span className="foot-soon-tag">Soon</span>
-          </span>
+          <Link to="/whitelist" className="foot-link">
+            Join Whitelist
+          </Link>
         </div>
 
         <div className="foot-col">

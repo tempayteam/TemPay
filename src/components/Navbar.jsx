@@ -26,9 +26,9 @@ const Navbar = () => {
           </span>
         </a>
       </div>
-      <a href="#" className="btn btn-fill docs-link" onClick={(e) => e.preventDefault()}>Launch App →
-        <span className="docs-tooltip">Coming Soon</span>
-      </a>
+      <Link to="/whitelist" className="btn btn-fill">
+        Launch App →
+      </Link>
     </nav>
   );
 };
