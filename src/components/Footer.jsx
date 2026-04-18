@@ -32,7 +32,7 @@ const Footer = () => {
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.736-8.861-8.17-10.639h6.17l4.271 5.64 5.495-5.64Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
             </a>
-           
+
             <a
               href="#"
               className="foot-social-btn"
@@ -88,9 +88,9 @@ const Footer = () => {
 
         <div className="foot-col">
           <p className="foot-col-title">Developers</p>
-          <span className="foot-link foot-soon-link">
-            Documentation <span className="foot-soon-tag">Soon</span>
-          </span>
+          <Link className="foot-link foot-soon-link" to="/docs">
+            Documentation
+          </Link>
           <span className="foot-link foot-soon-link">
             API Reference <span className="foot-soon-tag">Soon</span>
           </span>
