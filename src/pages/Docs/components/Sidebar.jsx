@@ -3,34 +3,34 @@ export default function Sidebar({ active, onNav, isOpen }) {
     {
       section: "Getting Started",
       items: [
-        { id: "welcome", icon: "◎", label: "Welcome" },
-        { id: "overview", icon: "◈", label: "What is TempPay" },
-        { id: "network", icon: "◉", label: "Tempo Network" },
+        { id: "welcome", label: "Welcome" },
+        { id: "overview", label: "What is TempPay" },
+        { id: "network", label: "Tempo Network" },
       ],
     },
     {
       section: "Core Features",
       items: [
-        { id: "payments", icon: "⟳", label: "Payment Types" },
-        { id: "quickstart", icon: "▷", label: "Quick Start Guide" },
-        { id: "tracked", icon: "⊡", label: "Tracked Payments" },
-        { id: "requests", icon: "⊕", label: "Payment Requests" },
+        { id: "payments", label: "Payment Types" },
+        { id: "quickstart", label: "Quick Start Guide" },
+        { id: "tracked", label: "Tracked Payments" },
+        { id: "requests", label: "Payment Requests" },
       ],
     },
     {
       section: "Dispute System",
       items: [
-        { id: "disputes", icon: "⚑", label: "Disputes Overview" },
-        { id: "resolution", icon: "✦", label: "Resolution Process" },
+        { id: "disputes", label: "Disputes Overview" },
+        { id: "resolution", label: "Resolution Process" },
       ],
     },
     {
       section: "Developers",
       items: [
-        { id: "integration", icon: "⟨⟩", label: "Integration Guide" },
-        { id: "contracts", icon: "≡", label: "Smart Contracts" },
-        { id: "security", icon: "⊗", label: "Security" },
-        { id: "roadmap", icon: "↗", label: "Roadmap" },
+        { id: "integration", label: "Integration Guide" },
+        { id: "contracts", label: "Smart Contracts" },
+        { id: "security", label: "Security" },
+        { id: "roadmap", label: "Roadmap" },
       ],
     },
   ];
@@ -47,7 +47,6 @@ export default function Sidebar({ active, onNav, isOpen }) {
                 className={`nav-link${active === item.id ? " active" : ""}`}
                 onClick={() => onNav(item.id)}
               >
-                <span className="nav-icon">{item.icon}</span>
                 {item.label}
               </a>
             ))}
@@ -55,13 +54,7 @@ export default function Sidebar({ active, onNav, isOpen }) {
         ))}
       </nav>
 
-      <div className="sidebar-footer">
-        Built on{" "}
-        <a href="https://tempay.xyz" target="_blank" rel="noopener noreferrer">
-          tempay.xyz
-        </a>{" "}
-        · Tempo Chain
-      </div>
+      <div className="sidebar-footer">Built on · Tempo Chain</div>
     </aside>
   );
 }

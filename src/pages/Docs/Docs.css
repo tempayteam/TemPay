@@ -58,6 +58,7 @@ body.docs-mode-active {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   width: 100%;
+  margin-top: var(--nav-h);
   min-height: calc(100vh - var(--nav-h));
 }
 
@@ -82,10 +83,11 @@ body.docs-mode-active {
    ═══════════════════════════════════════════════════════════════ */
 
 .docs-page-container .docs-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   z-index: 200;
   display: flex;
   align-items: center;
