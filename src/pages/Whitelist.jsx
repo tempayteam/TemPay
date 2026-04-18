@@ -122,7 +122,7 @@ const Whitelist = () => {
   };
 
   const handleLikeAndRepost = () => {
-    window.open("https://x.com/tempay_tempo/status/2044815581774532965?s=20", "_blank");
+    window.open("https://x.com/tempay_tempo/status/2045147772891083056?s=20", "_blank");
     setHasLikedAndReposted(true);
   };
 
