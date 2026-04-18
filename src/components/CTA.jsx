@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -15,7 +16,7 @@ const CTA = () => {
           className="btn-cta"
           style={{ display: "inline-block", textDecoration: "none" }}
         >
-          Get Started →
+          Get Started <ArrowRight size={18} />
         </Link>
       </div>
     </div>

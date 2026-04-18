@@ -1,36 +1,53 @@
+import React from "react";
+import {
+  Home,
+  Info,
+  Network,
+  CreditCard,
+  Zap,
+  Activity,
+  ArrowDownToLine,
+  Flag,
+  Scale,
+  Code,
+  FileCode,
+  Shield,
+  Map,
+} from "lucide-react";
+
 export default function Sidebar({ active, onNav, isOpen }) {
   const navItems = [
     {
       section: "Getting Started",
       items: [
-        { id: "welcome", label: "Welcome" },
-        { id: "overview", label: "What is TempPay" },
-        { id: "network", label: "Tempo Network" },
+        { id: "welcome", icon: Home, label: "Welcome" },
+        { id: "overview", icon: Info, label: "What is TempPay" },
+        { id: "network", icon: Network, label: "Tempo Network" },
       ],
     },
     {
       section: "Core Features",
       items: [
-        { id: "payments", label: "Payment Types" },
-        { id: "quickstart", label: "Quick Start Guide" },
-        { id: "tracked", label: "Tracked Payments" },
-        { id: "requests", label: "Payment Requests" },
+        { id: "payments", icon: CreditCard, label: "Payment Types" },
+        { id: "quickstart", icon: Zap, label: "Quick Start Guide" },
+        { id: "tracked", icon: Activity, label: "Tracked Payments" },
+        { id: "requests", icon: ArrowDownToLine, label: "Payment Requests" },
       ],
     },
     {
       section: "Dispute System",
       items: [
-        { id: "disputes", label: "Disputes Overview" },
-        { id: "resolution", label: "Resolution Process" },
+        { id: "disputes", icon: Flag, label: "Disputes Overview" },
+        { id: "resolution", icon: Scale, label: "Resolution Process" },
       ],
     },
     {
       section: "Developers",
       items: [
-        { id: "integration", label: "Integration Guide" },
-        { id: "contracts", label: "Smart Contracts" },
-        { id: "security", label: "Security" },
-        { id: "roadmap", label: "Roadmap" },
+        { id: "integration", icon: Code, label: "Integration Guide" },
+        { id: "contracts", icon: FileCode, label: "Smart Contracts" },
+        { id: "security", icon: Shield, label: "Security" },
+        { id: "roadmap", icon: Map, label: "Roadmap" },
       ],
     },
   ];
@@ -47,6 +64,7 @@ export default function Sidebar({ active, onNav, isOpen }) {
                 className={`nav-link${active === item.id ? " active" : ""}`}
                 onClick={() => onNav(item.id)}
               >
+                <item.icon className="nav-icon" size={16} strokeWidth={2.5} />
                 {item.label}
               </a>
             ))}

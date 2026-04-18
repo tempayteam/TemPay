@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { Rocket } from "lucide-react";
 import "./Whitelist.css";
 
 import img1 from "../assets/1.webp";
@@ -211,7 +212,7 @@ const Whitelist = () => {
               <div className="wl-step-content success-view">
                 <div className="wl-success-msg show">
                   <div className="wl-success-dot" />
-                  You’re on the whitelist 🚀
+                  You’re on the whitelist <Rocket size={18} style={{ marginLeft: "6px" }} />
                 </div>
                 <p className="wl-success-subtext">
                   Thank you for joining, <strong>{username}</strong>. We'll

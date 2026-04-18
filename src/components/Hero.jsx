@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { ArrowRight, ArrowDown } from "lucide-react";
 
 const Hero = () => {
   const canvasRef = useRef(null);
@@ -120,10 +121,10 @@ const Hero = () => {
           </p>
           <div className="hero-ctas">
             <Link to="/whitelist" className="btn btn-fill btn-lg">
-              Launch App →
+              Launch App <ArrowRight size={18} />
             </Link>
             <a href="#hiw" className="how-link">
-              How it works ↓
+              How it works <ArrowDown size={14} />
             </a>
           </div>
         </div>

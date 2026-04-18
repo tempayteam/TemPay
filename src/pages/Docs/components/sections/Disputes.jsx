@@ -1,3 +1,6 @@
+import React from 'react';
+import { ArrowRight } from "lucide-react";
+
 export default function Disputes() {
   return (
     <>
@@ -14,7 +17,7 @@ export default function Disputes() {
         <p>A dispute is triggered when:</p>
         <div className="steps">
           <div className="step">
-            <div className="step-num">→</div>
+            <div className="step-num"><ArrowRight size={18} /></div>
             <div className="step-body">
               <h4>Sender Stops a Tracked Payment</h4>
               <p>The sender decides to halt a tracked payment before the receiver claims it. This moves the payment to <code>Stopped</code> status and opens a dispute case.</p>

@@ -1,3 +1,5 @@
+import { Zap, ArrowRight } from "lucide-react";
+
 export default function Welcome({ onNav }) {
   return (
     <>
@@ -21,7 +23,7 @@ export default function Welcome({ onNav }) {
         </div>
         <div className="hero-cta">
           <button className="btn-primary" onClick={() => onNav("quickstart")}>
-            Get Started →
+            Get Started <ArrowRight size={16} style={{ display: "inline-block", verticalAlign: "middle" }} />
           </button>
           <button
             className="btn-secondary"
@@ -37,7 +39,7 @@ export default function Welcome({ onNav }) {
 
         <div className="card-grid">
           <div className="card">
-            <div className="card-icon ci-orange">⚡</div>
+            <div className="card-icon ci-orange"><Zap size={16} /></div>
             <h4>Instant Payments</h4>
             <p>
               Send PathUSD directly to any wallet on the Tempo network in

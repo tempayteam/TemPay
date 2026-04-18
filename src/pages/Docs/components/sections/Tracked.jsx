@@ -1,3 +1,6 @@
+import React from 'react';
+import { ArrowDown, ArrowDownRight, Check } from "lucide-react";
+
 export default function Tracked() {
   return (
     <>
@@ -16,16 +19,18 @@ export default function Tracked() {
             <div className="flow-node highlight" style={{ minWidth: '150px' }}>Created</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Sender locks PathUSD in contract</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 14px', fontSize: '18px' }}>↓</div>
+          <div style={{ color: 'var(--text3)', padding: '0 14px' }}><ArrowDown size={18} /></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0' }}>
             <div className="flow-node" style={{ minWidth: '150px', borderColor: 'rgba(59,130,246,0.25)', color: '#60a5fa' }}>Active</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Funds locked, awaiting claim time</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 14px', fontSize: '18px' }}>↓ or ↘</div>
+          <div style={{ color: 'var(--text3)', padding: '0 14px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <ArrowDown size={18} /> or <ArrowDownRight size={18} />
+          </div>
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', padding: '8px 0' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <div className="flow-node" style={{ minWidth: '130px', borderColor: 'rgba(34,197,94,0.25)', color: 'var(--green)' }}>Claimed</div>
-              <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Receiver gets PathUSD ✓</span>
+              <span style={{ color: 'var(--text3)', fontSize: '12px', display: 'flex', alignItems: 'center', gap: '4px' }}>Receiver gets PathUSD <Check size={14} /></span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <div className="flow-node" style={{ minWidth: '130px', borderColor: 'rgba(245,158,11,0.25)', color: 'var(--amber)' }}>Stopped</div>

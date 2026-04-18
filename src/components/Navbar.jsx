@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,12 +44,12 @@ const Navbar = () => {
           className="btn btn-fill mobile-only-cta"
           onClick={() => setIsOpen(false)}
         >
-          Launch App →
+          Launch App <ArrowRight size={16} />
         </Link>
       </div>
       <div className="nav-right">
         <Link to="/whitelist" className="btn btn-fill desktop-only-cta">
-          Launch App →
+          Launch App <ArrowRight size={16} />
         </Link>
         <button
           className="nav-mobile-menu"

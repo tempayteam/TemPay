@@ -1,3 +1,6 @@
+import React from 'react';
+import { ArrowDown, ArrowDownRight } from "lucide-react";
+
 export default function Resolution() {
   return (
     <>
@@ -11,22 +14,24 @@ export default function Resolution() {
             <div className="flow-node highlight" style={{ minWidth: '170px' }}>Sender stops payment</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Payment moves to Stopped status</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 16px', fontSize: '18px' }}>↓</div>
+          <div style={{ color: 'var(--text3)', padding: '0 16px' }}><ArrowDown size={18} /></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '10px 0' }}>
             <div className="flow-node" style={{ minWidth: '170px', borderColor: 'rgba(59,130,246,0.25)', color: '#60a5fa' }}>Dispute case opened</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Both parties notified</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 16px', fontSize: '18px' }}>↓</div>
+          <div style={{ color: 'var(--text3)', padding: '0 16px' }}><ArrowDown size={18} /></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '10px 0' }}>
             <div className="flow-node" style={{ minWidth: '170px', borderColor: 'rgba(245,158,11,0.25)', color: 'var(--amber)' }}>Evidence submitted</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>Both sides provide proof</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 16px', fontSize: '18px' }}>↓</div>
+          <div style={{ color: 'var(--text3)', padding: '0 16px' }}><ArrowDown size={18} /></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '10px 0' }}>
             <div className="flow-node" style={{ minWidth: '170px', borderColor: 'rgba(139,92,246,0.25)', color: '#a78bfa' }}>Admin review</div>
             <span style={{ color: 'var(--text3)', fontSize: '12px' }}>TempPay team evaluates the case</span>
           </div>
-          <div style={{ color: 'var(--text3)', padding: '0 16px', fontSize: '18px' }}>↓ or ↘</div>
+          <div style={{ color: 'var(--text3)', padding: '0 16px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <ArrowDown size={18} /> or <ArrowDownRight size={18} />
+          </div>
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', padding: '10px 0' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <div className="flow-node" style={{ minWidth: '150px', borderColor: 'rgba(34,197,94,0.25)', color: 'var(--green)' }}>Approved</div>

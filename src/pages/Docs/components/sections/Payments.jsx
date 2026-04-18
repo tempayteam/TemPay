@@ -1,3 +1,6 @@
+import React from 'react';
+import { Zap, ArrowRight } from "lucide-react";
+
 export default function Payments() {
   return (
     <>
@@ -7,14 +10,14 @@ export default function Payments() {
       </div>
       <div className="content-area">
         <div className="card" style={{ marginBottom: '16px', borderColor: 'rgba(255,107,0,0.2)' }}>
-          <div className="card-icon ci-orange">⚡</div>
+          <div className="card-icon ci-orange"><Zap size={16} /></div>
           <h4 style={{ fontSize: '16px', marginBottom: '8px' }}>Direct Payment</h4>
           <p style={{ marginBottom: '12px' }}>Send PathUSD instantly to any wallet address on Tempo. No conditions, no locks  funds arrive immediately.</p>
           <div className="flow">
             <div className="flow-node highlight">Sender</div>
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow"><ArrowRight size={14} /></div>
             <div className="flow-node">TempPay Contract</div>
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow"><ArrowRight size={14} /></div>
             <div className="flow-node highlight">Receiver</div>
           </div>
           <p style={{ fontSize: '11px', color: 'var(--text3)', marginTop: '6px' }}>Best for: one-time payments, immediate settlements, simple transfers</p>
@@ -28,9 +31,9 @@ export default function Payments() {
           <p style={{ marginBottom: '12px' }}>Funds are locked in the smart contract until the receiver claims them at the scheduled time. Both parties can see the payment status on-chain.</p>
           <div className="flow">
             <div className="flow-node">Sender locks PathUSD</div>
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow"><ArrowRight size={14} /></div>
             <div className="flow-node highlight">Locked in Contract</div>
-            <div className="flow-arrow">→</div>
+            <div className="flow-arrow"><ArrowRight size={14} /></div>
             <div className="flow-node">Receiver claims</div>
           </div>
           <table className="doc-table" style={{ marginTop: '12px' }}>

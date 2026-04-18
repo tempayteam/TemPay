@@ -1,3 +1,6 @@
+import React from 'react';
+import { ArrowRight, Check } from "lucide-react";
+
 export default function Integration() {
   return (
     <>
@@ -19,11 +22,11 @@ export default function Integration() {
         <h3>Architecture</h3>
         <div className="arch-diagram">
           <div className="arch-box app">Your dApp</div>
-          <div className="arch-arrow">→</div>
+          <div className="arch-arrow"><ArrowRight size={18} /></div>
           <div className="arch-box sdk">TempPay SDK</div>
-          <div className="arch-arrow">→</div>
+          <div className="arch-arrow"><ArrowRight size={18} /></div>
           <div className="arch-box contract">Smart Contracts</div>
-          <div className="arch-arrow">→</div>
+          <div className="arch-arrow"><ArrowRight size={18} /></div>
           <div className="arch-box chain">Tempo Chain</div>
         </div>
 
@@ -80,28 +83,28 @@ export default function Integration() {
 
         <div className="feature-highlight">
           <div className="feature-item">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon"><Check size={16} /></div>
             <div className="feature-text">
               <h5>Tempo Network RPC</h5>
               <p>rpc.tempo.xyz · Chain ID: 4217</p>
             </div>
           </div>
           <div className="feature-item">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon"><Check size={16} /></div>
             <div className="feature-text">
               <h5>PathUSD Token</h5>
               <p>ERC-20 compatible, 6 decimals</p>
             </div>
           </div>
           <div className="feature-item">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon"><Check size={16} /></div>
             <div className="feature-text">
               <h5>Wallet Support</h5>
               <p>MetaMask, WalletConnect, any EVM</p>
             </div>
           </div>
           <div className="feature-item">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon"><Check size={16} /></div>
             <div className="feature-text">
               <h5>Smart Contracts</h5>
               <p>Deployed and operational</p>

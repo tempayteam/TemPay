@@ -1,3 +1,6 @@
+import React from 'react';
+import { Check, X } from 'lucide-react';
+
 export default function Overview() {
   return (
     <>
@@ -47,13 +50,13 @@ export default function Overview() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>Instant send</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Scheduled / tracked payments</td><td>✗</td><td>✓</td></tr>
-            <tr><td>Pause or stop a payment</td><td>✗</td><td>✓</td></tr>
-            <tr><td>Dispute resolution</td><td>✗</td><td>✓</td></tr>
-            <tr><td>Payment requests</td><td>✗</td><td>✓</td></tr>
-            <tr><td>Non-custodial</td><td>✓</td><td>✓</td></tr>
-            <tr><td>On-chain auditability</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Instant send</td><td><Check size={18} color="var(--green)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>Scheduled / tracked payments</td><td><X size={18} color="var(--red)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>Pause or stop a payment</td><td><X size={18} color="var(--red)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>Dispute resolution</td><td><X size={18} color="var(--red)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>Payment requests</td><td><X size={18} color="var(--red)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>Non-custodial</td><td><Check size={18} color="var(--green)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
+            <tr><td>On-chain auditability</td><td><Check size={18} color="var(--green)" /></td><td><Check size={18} color="var(--green)" /></td></tr>
           </tbody>
         </table>
       </div>
