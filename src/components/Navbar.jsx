@@ -39,18 +39,18 @@ const Navbar = () => {
         >
           Docs
         </Link>
-        <Link
-          to="/whitelist"
+        <a
+          href="https://app.tempay.xyz"
           className="btn btn-fill mobile-only-cta"
           onClick={() => setIsOpen(false)}
         >
           Launch App <ArrowRight size={16} />
-        </Link>
+        </a>
       </div>
       <div className="nav-right">
-        <Link to="/whitelist" className="btn btn-fill desktop-only-cta">
+        <a href="https://app.tempay.xyz" className="btn btn-fill desktop-only-cta">
           Launch App <ArrowRight size={16} />
-        </Link>
+        </a>
         <button
           className="nav-mobile-menu"
           onClick={() => setIsOpen(!isOpen)}

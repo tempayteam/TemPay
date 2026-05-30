@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import { ArrowRight, ArrowDown } from "lucide-react";
 
 const Hero = () => {
@@ -120,9 +119,9 @@ const Hero = () => {
             on-chain dispute resolution.
           </p>
           <div className="hero-ctas">
-            <Link to="/whitelist" className="btn btn-fill btn-lg">
+            <a href="https://app.tempay.xyz" className="btn btn-fill btn-lg">
               Launch App <ArrowRight size={18} />
-            </Link>
+            </a>
             <a href="#hiw" className="how-link">
               How it works <ArrowDown size={14} />
             </a>
